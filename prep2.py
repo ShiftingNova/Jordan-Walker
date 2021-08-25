@@ -1,4 +1,4 @@
-eyes = input("eye style:\n")
+eyes = input("Eye style:\n")
 print("\n|||||||")
 print("| "+eyes+" "+ eyes+" |")
 print("|  _  |")
