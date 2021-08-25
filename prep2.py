@@ -1,5 +1,5 @@
-eyes = input("eye style:")
-print("\n"+"\n"+ "|||||||")
+eyes = input("eye style:\n")
+print("\n|||||||")
 print("| "+eyes+" "+ eyes+" |")
 print("|  _  |")
 print(" -----")
