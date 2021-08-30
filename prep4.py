@@ -1,6 +1,6 @@
-feet = int(input("Number of feet:"))
+feet = int(input("Number of feet:\n"))
 inch = feet*12
-meter = feet*0.3
+meter = feet*0.3048
 rod=feet/16.5
 print("\nInches: "+str(inch))
 print("Meter: "+str(meter))
