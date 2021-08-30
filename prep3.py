@@ -1,5 +1,5 @@
-width=int(input("Input a witdh"))
-hieght=int(input("input a hieght"))
+width=int(input("Rectangle width:"))
+hieght=int(input("\nRectangle height:"))
 print("\n")
 for i in range (hieght):
     print("#"*width)
