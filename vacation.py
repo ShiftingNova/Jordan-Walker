@@ -1,3 +1,8 @@
+### 
+### Author: Jordan Walker
+### Class: CSc 110
+### Description: this is a mad lib program that tells the story of a copuple going on vacation
+###
 male = input("A male name:\n")
 female = input("A female name:\n")
 pet = input("A pet name:\n")
