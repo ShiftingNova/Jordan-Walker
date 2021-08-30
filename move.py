@@ -1,3 +1,8 @@
+### 
+### Author: Jordan Walker
+### Class: CSc 110
+### Description: A madlib story of some female moving
+###
 fname = input("A female name:\n")
 street = input("A street name:\n")
 Mname = input("A male name:\n")
