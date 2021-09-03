@@ -1,5 +1,5 @@
 length = int(input("Model-T length:\n"))
-print(".-----------"+"-"*length+".")
+print("\n.-----------"+"-"*length+".")
 print("| ### ||  ###" + "#" * length + "\ ")
 print("| ### ||  ####"+"#"*length+"\.")
 print("D     ||  "+" "*length+"<>    |------+")
