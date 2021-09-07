@@ -1,0 +1,10 @@
+size = int(input("Wright flyer size:\n"))
+print("        "+"     "*size+"#")
+print("  "+"     "*size+" #---------#")
+print("  "+"     "*size+" #---------#")
+print(("======="+"====="*size)*2+"===")
+print((" H" + "    |"*size + "  |  %H%  |  "+"|    " * size + "H\n")*int(size/5 + 1)+(" H" + "    |" * size + "**|**%H%**|**" + "|    " * size + "H"))
+print((" H" + "    |"*size + "  |  %H%  |  "+"|    " * size + "H\n")*int(size/5 + 1)+("======="+"====="*size+"%H%"+"======="+"====="*size))
+print("   "+"     "*size+"|         |")
+print(("   "+"     "*size)+("+#########+"))
+#Jordan Walker csc110 2021
