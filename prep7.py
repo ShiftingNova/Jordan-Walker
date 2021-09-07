@@ -8,4 +8,4 @@ else:
     s2 = 1
 if type.lower() == "regular":
     t2 = 3
-print(\nstr(50*t2*s2)+" calories")
+print("\n" +str(50*t2*s2)+" calories")
