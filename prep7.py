@@ -1,5 +1,5 @@
 size = input("Drink Size:\n")
-type = input("Drink type:\n")
+type = input("Drink type:\n\n")
 s2=0
 t2 = 0
 if size.lower() =="large":
@@ -8,4 +8,4 @@ else:
     s2 = 1
 if type.lower() == "regular":
     t2 = 3
-print("\n" +str(50*t2*s2)+" calories")
+print(str(50*t2*s2)+" calories")
