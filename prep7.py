@@ -8,4 +8,6 @@ else:
     s2 = 1
 if type.lower() == "regular":
     t2 = 3
+if type.lower() == "diet":
+    t2 = 1
 print(str(50*t2*s2)+" calories")
