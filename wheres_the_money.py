@@ -1,23 +1,23 @@
 print("-----------------------------\n" + "----- WHERE'S THE MONEY -----\n" + "-----------------------------")
 salary = int(input("What is your annual salary?\n"))
 if salary <0:
-    print("Must enter positive integer for salary")
+    print("Must enter positive integer for salary.")
     exit()
 morgage = int(input("How much is your monthly mortgage or rent?\n"))
 if morgage <0:
-    print("Must enter positive integer for mortgage or rent")
+    print("Must enter positive integer for mortgage or rent.")
     exit()
 bills = int(input("What do you spend on bills monthly?\n"))
 if bills <0:
-    print("Must enter positive integer for bills")
+    print("Must enter positive integer for bills.")
     exit()
 food = int(input("What are your weekly grocery/food expenses?\n"))
 if food <0:
-    print("Must enter positive integer for food")
+    print("Must enter positive integer for food.")
     exit()
 travel = int(input("How much do you spend on travel annually?\n"))
 if travel <0:
-    print("Must enter positive integer for travel")
+    print("Must enter positive integer for travel.")
     exit()
 tax = 0.0
 if salary <= 15000:
@@ -47,6 +47,7 @@ if (salary * (tax / 100)) >= 75000:
     print(">>> TAX LIMIT REACHED <<<")
 if left < 0:
     print(">>> WARNING: DEFICIT <<<")
+
 
 ### 
 ### Author: Jordan Walker
