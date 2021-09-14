@@ -4,22 +4,22 @@ if not(salary.isnumeric()):
     print("Must enter positive integer for salary.")
     exit()
 salary = int(salary)
-morgage = int(input("How much is your monthly mortgage or rent?\n"))
+morgage = input("How much is your monthly mortgage or rent?\n")
 if not(morgage.isnumeric()):
     print("Must enter positive integer for mortgage or rent.")
     exit()
 morgage = int(morgage)
-bills = int(input("What do you spend on bills monthly?\n"))
+bills = input("What do you spend on bills monthly?\n")
 if not(bills.isnumeric()):
     print("Must enter positive integer for bills.")
     exit()
 bills = int(bills)
-food = int(input("What are your weekly grocery/food expenses?\n"))
+food = input("What are your weekly grocery/food expenses?\n")
 if not(food.isnumeric()):
     print("Must enter positive integer for food.")
     exit()
 food = int(food)
-travel = int(input("How much do you spend on travel annually?\n\n"))
+travel = input("How much do you spend on travel annually?\n\n")
 if not(travel.isnumeric()):
     print("Must enter positive integer for travel.")
     exit()
