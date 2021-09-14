@@ -15,7 +15,7 @@ food = int(input("What are your weekly grocery/food expenses?\n"))
 if food <0:
     print("Must enter positive integer for food.")
     exit()
-travel = int(input("How much do you spend on travel annually?\n"))
+travel = int(input("How much do you spend on travel annually?\n\n"))
 if travel <0:
     print("Must enter positive integer for travel.")
     exit()
