@@ -19,11 +19,12 @@ if not(food.isnumeric()):
     print("Must enter positive integer for food.")
     exit()
 food = int(food)
-travel = input("How much do you spend on travel annually?\n\n")
+travel = input("How much do you spend on travel annually?\n")
 if not(travel.isnumeric()):
     print("Must enter positive integer for travel.")
     exit()
 travel = int(travel)
+print("")
 tax = 0.0
 if salary <= 15000:
     tax = 10
