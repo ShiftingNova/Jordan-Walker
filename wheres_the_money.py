@@ -28,13 +28,13 @@ elif salary <= 200000:
     tax = 25
 else:
     tax = 30
-left = salary-(morgage*12) - (bills*12) - (food*52) - (travel) - (salary * (tax / 100))
 taxed = salary * (tax / 100.00)
 if taxed > 75000:
-    taxed == 75000.00
+    taxed = 75000.00
+left = salary - (morgage * 12) - (bills * 12) - (food * 52) - travel - taxed
 count = 0
 Mcount = len("| mortgage/rent | $  " + str(format(morgage*12,'9,.2f')) + " |  " + str(format(morgage*12/salary*100,'4,.1f'))+ "% | " + "#" * int(morgage*12/salary*100))
-Bcount = len("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |   " + str(format(bills*12/salary*100,'4,.1f')) + "% | " + "#" * int(bills*12/salary*100))
+Bcount = len("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |  " + str(format(bills*12/salary*100,'4,.1f')) + "% | " + "#" * int(bills*12/salary*100))
 Fcount = len("|          food | $  "+str(format(food*52,'9,.2f')) + " |  " + str(format(food*52/salary*100,'4,.1f')) + "% | " + "#" * int(food*52/salary*100))
 Tcount = len("|        travel | $  " + str(format(travel,'9,.2f')) + " |  " + str(format(travel/salary*100,'4,.1f')) + "% | " + "#" * int(travel/salary*100))
 TAXcount = len("|           tax | $  " + str(format(taxed,'9,.2f')) + " |  " + str(format(tax,'4,.1f')) +"% | " + "#" * tax)
@@ -59,7 +59,7 @@ print("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |  " + str(for
 print("|          food | $  "+str(format(food*52,'9,.2f')) + " |  " + str(format(food*52/salary*100,'4,.1f')) + "% | " + "#" * int(food*52/salary*100))
 print("|        travel | $  " + str(format(travel,'9,.2f')) + " |  " + str(format(travel/salary*100,'4,.1f')) + "% | " + "#" * int(travel/salary*100))
 print("|           tax | $  " + str(format(taxed,'9,.2f')) + " |  " + str(format(tax,'4,.1f')) +"% | " + "#" * tax)
-print("|         extra | $  " + str(format(left,'9,.2f')) +" |  " + str(format(left/salary*100,'4,.1f')) + "% | " + "#" * int(left/salary*100))
+print("|         extra | $  " + str(format(left,'9,.2f')) + " |  " + str(format(left/salary*100,'4,.1f')) + "% | " + "#" * int(left/salary*100))
 print("-"*count)
 if (salary * (tax / 100)) >= 75000:
     print(">>> TAX LIMIT REACHED <<<")
