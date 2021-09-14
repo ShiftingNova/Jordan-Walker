@@ -1,24 +1,29 @@
 print("-----------------------------\n" + "----- WHERE'S THE MONEY -----\n" + "-----------------------------")
-salary = int(input("What is your annual salary?\n"))
-if salary <0:
+salary = input("What is your annual salary?\n")
+if not(salary.isnumeric()):
     print("Must enter positive integer for salary.")
     exit()
+salary = int(salary)
 morgage = int(input("How much is your monthly mortgage or rent?\n"))
-if morgage <0:
+if not(morgage.isnumeric()):
     print("Must enter positive integer for mortgage or rent.")
     exit()
+morgage = int(morgage)
 bills = int(input("What do you spend on bills monthly?\n"))
-if bills <0:
+if not(bills.isnumeric()):
     print("Must enter positive integer for bills.")
     exit()
+bills = int(bills)
 food = int(input("What are your weekly grocery/food expenses?\n"))
-if food <0:
+if not(food.isnumeric()):
     print("Must enter positive integer for food.")
     exit()
+food = int(food)
 travel = int(input("How much do you spend on travel annually?\n\n"))
-if travel <0:
+if not(travel.isnumeric()):
     print("Must enter positive integer for travel.")
     exit()
+travel = int(travel)
 tax = 0.0
 if salary <= 15000:
     tax = 10
