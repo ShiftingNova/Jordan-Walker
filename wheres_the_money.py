@@ -32,12 +32,30 @@ left = salary-(morgage*12) - (bills*12) - (food*52) - (travel) - (salary * (tax 
 taxed = salary * (tax / 100.00)
 if taxed > 75000:
     taxed == 75000.00
-count = len("| mortgage/rent | $  " + str(format(morgage*12,'9,.2f')) + " |  " + str(round(morgage*12/salary*100,1) )+ "% | " + "#" * int(morgage*12/salary*100))
-print("-"*count)
+count = 0
+Mcount = len("| mortgage/rent | $  " + str(format(morgage*12,'9,.2f')) + " |  " + str(format(morgage*12/salary*100,'4,.1f'))+ "% | " + "#" * int(morgage*12/salary*100))
+Bcount = len("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |   " + str(format(bills*12/salary*100,'4,.1f')) + "% | " + "#" * int(bills*12/salary*100))
+Fcount = len("|          food | $  "+str(format(food*52,'9,.2f')) + " |  " + str(format(food*52/salary*100,'4,.1f')) + "% | " + "#" * int(food*52/salary*100))
+Tcount = len("|        travel | $  " + str(format(travel,'9,.2f')) + " |  " + str(format(travel/salary*100,'4,.1f')) + "% | " + "#" * int(travel/salary*100))
+TAXcount = len("|           tax | $  " + str(format(taxed,'9,.2f')) + " |  " + str(format(tax,'4,.1f')) +"% | " + "#" * tax)
+Ecount = len("|         extra | $  " + str(format(left,'9,.2f')) +" |  " + str(format(left/salary*100,'4,.1f')) + "% | " + "#" * int(left/salary*100))
+if Mcount >= Bcount and Mcount >= Fcount and Mcount >= Tcount and Mcount >= TAXcount and Mcount >= Ecount:
+    count = Mcount
+if Bcount >= Mcount and Bcount >= Fcount and Bcount >= Tcount and Bcount >= TAXcount and Bcount >= Ecount:
+    count = Bcount
+if Fcount >= Bcount and Fcount >= Mcount and Fcount >= Tcount and Fcount >= TAXcount and Fcount >= Ecount:
+    count = Fcount
+if Tcount >= Bcount and Tcount >= Fcount and Tcount >= Mcount and Tcount >= TAXcount and Tcount >= Ecount:
+    count = Tcount
+if TAXcount >= Bcount and TAXcount >= Fcount and TAXcount >= Tcount and TAXcount >= Mcount and TAXcount >= Ecount:
+    count = TAXcount
+if Ecount >= Bcount and Ecount >= Fcount and Ecount >= Tcount and Ecount >= TAXcount and Ecount >= Mcount:
+    count = Ecount
+print("-" * count)
 print("See the financial breakdown below, based on a salary of $" + str(salary))
 print("-"*count)
 print("| mortgage/rent | $  " + str(format(morgage*12,'9,.2f')) + " |  " + str(format(morgage*12/salary*100,'4,.1f'))+ "% | " + "#" * int(morgage*12/salary*100))
-print("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |  " + str(format(bills*12/salary*100,'4,.1f')) + "% | " + "#" * int(bills*12/salary*100))
+print("|         bills | $  " + str(format(bills*12,'9,.2f')) + " |   " + str(format(bills*12/salary*100,'4,.1f')) + "% | " + "#" * int(bills*12/salary*100))
 print("|          food | $  "+str(format(food*52,'9,.2f')) + " |  " + str(format(food*52/salary*100,'4,.1f')) + "% | " + "#" * int(food*52/salary*100))
 print("|        travel | $  " + str(format(travel,'9,.2f')) + " |  " + str(format(travel/salary*100,'4,.1f')) + "% | " + "#" * int(travel/salary*100))
 print("|           tax | $  " + str(format(taxed,'9,.2f')) + " |  " + str(format(tax,'4,.1f')) +"% | " + "#" * tax)
@@ -47,12 +65,9 @@ if (salary * (tax / 100)) >= 75000:
     print(">>> TAX LIMIT REACHED <<<")
 if left < 0:
     print(">>> WARNING: DEFICIT <<<")
-
-
-
 ### 
 ### Author: Jordan Walker
 ### Course: CSC 110
-### Description: This helps people wee where all their money goes. I and kind of proud of line 38 I thought i was going to do it the way i normally do it but thuis way is so much better.
+### Description: This helps people wee where all their money goes. 
 ###              
 ###
