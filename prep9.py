@@ -4,6 +4,7 @@ if name.isnumeric():
     name = int(name)
     for i in range(1, name + 1):
         sum = i * sum
+    print("")
     print(str(name)+" factorial = "+str(sum))
     # Jordan Walker
     # CSC 110
