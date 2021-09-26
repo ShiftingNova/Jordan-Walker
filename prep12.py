@@ -11,4 +11,4 @@ def  average_numbers(amount):
         total += temp_number
         i+=1
     total = round(total/amount, 2)
-    print("Average = ", total)
+    print("Average =", total)
